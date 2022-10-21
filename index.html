@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CODIFICADOR</title>
+</head>
+
+    <body background="back.jpg"; background-size="55%">
+    
+        <main class="container">
+          <h1>Message Encoder</h1>
+          <form>
+            <label for="mensagem"></label>
+            <textarea id="mensagem" cols="50" rows="4" placeholder = "Insira sua mensagem"></textarea>
+      
+            <select name="codigo" id="codigo">
+              <option value="" disabled selected>Selecione o tipo de codificador</option>
+              <option value="cesar">Cifra de César</option>
+              <option value="base64">Base64</option>
+            </select>
+      
+            <div class="divChave">
+              <label for="chave">Incremento (máx. 25)</label>
+              <input type="number" id="chave" value="1" max="26" />
+            </div>
+      
+            <div class="radioCod">
+              <div class="divRadio">
+                <input type="radio" name="cod" class="radio" id="cod" />
+                <label for="codificar">Codificar</label>
+              </div>
+      
+              <div class="divRadio">
+                <input type="radio" name="cod" class="radio" id="decod" />
+                <label for="decodificar">Decodificar</label>
+              </div>
+            </div>
+            <button id="botaoResultado">
+                <p>Codificar</p>
+              </button>
+            <div>
+              <label for="resultado"></label>
+              <textarea name="resultado" id="resultado" cols="50" rows="4" readonly placeholder = "Mensagem codificada"></textarea>
+            </div>
+          </form>
+        </main>
+    <br>
+    </div>
+    <div class="footer">
+      <br>
+        <a href="https://www.github.com/Gabriel%20SAG" target="_blank" rel="noopener noreferrer"><img src="media/github-logo.png" width="50" height="50"></a> <!--<a href="https://www.flaticon.com/free-icon/github-logo-silhouette-in-a-square_38401?term=github&page=1&position=15&page=1&position=15&related_id=38401&origin=search">Github ícones criados por Freepik - Flaticon</a>-->
+        <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B4gotPiABRqGgmUHqrYR7xQ%3D%3D" target="_blank" rel="noopener noreferrer"><img src="media/linkedin-logo.png" width="50" height="50"></a> <!--<a href="https://www.flaticon.com/br/icones-gratis/linkedin" title="linkedin ícones">Linkedin ícones criados por Freepik - Flaticon</a>-->
+        <p>Minhas Redes</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
